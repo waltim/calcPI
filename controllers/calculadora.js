@@ -22,19 +22,15 @@ module.exports = function() {
 					
 					return resultado;
 				},
-				
 				somar: function(numero1, numero2) {
-					return numero2 + numero1;
-				},
-				
+                    return numero2 + numero1;
+                },
 				subtrair: function(numero1, numero2) {
 					return numero1-numero2;
 				},
-				
 				multiplicar: function(numero1, numero2) {
 					return numero1 * numero2;
 				},
-				
 				dividir: function(numero1, numero2) {
 					return (numero2*100) / numero1;
 				},
@@ -133,6 +129,13 @@ module.exports = function() {
                     porcentagem = (gastos*100)/salario;
                     resuldado = porcentagem;
                     return porcentagem;
+                },
+                somarNumerosMais100: function(numero1, numero2) {
+                    resultado = Number(0);
+                    resultado += numero1;
+                    resultado += numero2;
+                    resultado += 100;
+                    return resultado;
                 }
 			},
 			

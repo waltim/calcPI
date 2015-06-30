@@ -42,6 +42,7 @@ describe('Calculadora', function() {
 				resultado.should.be.a.Number;
 				resultado.should.be.equal(-5);
 			});
+
 		});
 		
 		describe('Subtrair', function() {
@@ -333,6 +334,17 @@ describe('Calculadora', function() {
 
             resultado.should.be.a.Number;
             resultado.should.be.equal(porcentagem);
+        });
+    });
+    describe('SomarNumerosMais100', function() {
+        it('Deveria retornar 105 quando for passado 1 e 4.', function() {
+            var numero1 = 1;
+            var numero2 = 4;
+
+            var resultado = controller.utils.calculos.somarNumerosMais100(numero1, numero2);
+
+            resultado.should.be.a.Number;
+            resultado.should.be.equal(105);
         });
     });
 });
