@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for controllers\calculadora.js</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../prettify.css">
+    <link rel="stylesheet" href="../base.css">
+    <style type='text/css'>
+        div.coverage-summary .sorter {
+            background-image: url(../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class="header medium">
+    <h1>Code coverage report for <span class="entity">controllers\calculadora.js</span></h1>
+    <h2>
+        Statements: <span class="metric">71.19% <small>(42 / 59)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Branches: <span class="metric">0% <small>(0 / 4)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Functions: <span class="metric">47.06% <small>(8 / 17)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Lines: <span class="metric">71.19% <small>(42 / 59)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
+        Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
+    </h2>
+    <div class="path"><a href="../index.html">All files</a> &#187; <a href="index.html">controllers/</a> &#187; calculadora.js</div>
+</div>
+<div class="body">
+<pre><table class="coverage">
+<tr><td class="line-count">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135</td><td class="line-coverage"><span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">module.exports = function() {
+	var Controller = {
+		utils: {
+			formatarResposta: function(resultado) {
+				var accounting = require('accounting');
+				var resposta   = {
+					resultado: 0.0
+				};
+				
+				resultado = accounting.formatNumber(resultado, 2, ".", ",");
+				resposta.resultado = resultado;
+				
+				return resposta;
+			},
+			
+			calculos: {
+				calcular: function(parametros) {
+					var numero1 = parseFloat(parametros.numero1);
+					var numero2 = parseFloat(parametros.numero2);
+					
+					var resultado = Controller.utils.calculos[parametros.operacao](numero1, numero2);
+					
+					return resultado;
+				},
+				
+				somar: function(numero1, numero2) {
+					return numero2 + numero1;
+				},
+				
+				subtrair: function(numero1, numero2) {
+					return numero1-numero2;
+				},
+				
+				multiplicar: function(numero1, numero2) {
+					return numero1 * numero2;
+				},
+				
+				dividir: function(numero1, numero2) {
+					return numero1 / numero2;
+				},
+                somarGastos: function(numero1,numero2,numero3,numero4,numero5,numero6,numero7,numero8,
+                                      numero9,numero10,numero11,numero12,numero13,numero14,numero15,numero16,
+                                      numero17,numero18,numero19,numero20,numero21,numero22,numero23,numero24)
+                {
+                    gastos = Number(0);
+                    gastos +=numero1;
+                    gastos +=numero2;
+                    gastos +=numero3;
+                    gastos +=numero4;
+                    gastos +=numero5;
+                    gastos +=numero6;
+                    gastos +=numero7;
+                    gastos +=numero8;
+                    gastos +=numero9;
+                    gastos +=numero10;
+                    gastos +=numero11;
+                    gastos +=numero12;
+                    gastos +=numero13;
+                    gastos +=numero14;
+                    gastos +=numero15;
+                    gastos +=numero16;
+                    gastos +=numero17;
+                    gastos +=numero18;
+                    gastos +=numero19;
+                    gastos +=numero20;
+                    gastos +=numero21;
+                    gastos +=numero22;
+                    gastos +=numero23;
+                    gastos +=numero24;
+                    return gastos;
+                }
+			},
+			
+			validaParametro: <span class="fstat-no" title="function not covered" >function(parametro) {</span>
+<span class="cstat-no" title="statement not covered" >				if(parametro &amp;&amp; parametro !== '') {</span>
+<span class="cstat-no" title="statement not covered" >					return parseFloat(parametro);</span>
+				}
+				
+<span class="cstat-no" title="statement not covered" >				return 0.0;</span>
+			},
+			
+			extrairParametros: <span class="fstat-no" title="function not covered" >function(body) {</span>
+<span class="cstat-no" title="statement not covered" >				var parametros = {</span>
+					numero1: 0.0,
+					numero2: 0.0,
+					operacao: body.operacao
+				};
+				
+<span class="cstat-no" title="statement not covered" >				parametros.numero1 = Controller.utils.validaParametro(body.numero1);</span>
+<span class="cstat-no" title="statement not covered" >				parametros.numero2 = Controller.utils.validaParametro(body.numero2);</span>
+				
+<span class="cstat-no" title="statement not covered" >				return parametros;</span>
+			}
+		},
+		
+		get: {
+			index: <span class="fstat-no" title="function not covered" >function(request, response) {</span>
+<span class="cstat-no" title="statement not covered" >				response.render('index');</span>
+			},
+			
+			somar: <span class="fstat-no" title="function not covered" >function(request, response) {</span>
+<span class="cstat-no" title="statement not covered" >				response.render('somar');</span>
+			},
+			
+			subtrair: <span class="fstat-no" title="function not covered" >function(request, response) {</span>
+<span class="cstat-no" title="statement not covered" >				response.render('subtrair');</span>
+			},
+			
+			multiplicar: <span class="fstat-no" title="function not covered" >function(request, response) {</span>
+<span class="cstat-no" title="statement not covered" >				response.render('multiplicar');</span>
+			},
+			
+			dividir: <span class="fstat-no" title="function not covered" >function(request, response) {</span>
+<span class="cstat-no" title="statement not covered" >				response.render('dividir');</span>
+			},
+            somarGastos: <span class="fstat-no" title="function not covered" >function(request, response) {</span>
+<span class="cstat-no" title="statement not covered" >                response.render('somarGastos');</span>
+            }
+&nbsp;
+		},
+		
+		post: {
+			calcular: <span class="fstat-no" title="function not covered" >function(request, response) {</span>
+<span class="cstat-no" title="statement not covered" >				var parametros = Controller.utils.extrairParametros(request.body);</span>
+<span class="cstat-no" title="statement not covered" >				var resultado  = Controller.utils.calculos.calcular(parametros);</span>
+<span class="cstat-no" title="statement not covered" >				var resposta   = Controller.utils.formatarResposta(resultado);</span>
+				
+<span class="cstat-no" title="statement not covered" >				response.render(parametros.operacao, resposta);</span>
+			}
+		}
+	};
+	
+	return Controller;
+};
+&nbsp;</pre></td></tr>
+</table></pre>
+
+</div>
+<div class="footer">
+    <div class="meta">Generated by <a href="http://istanbul-js.org/" target="_blank">istanbul</a> at Tue Jun 30 2015 12:22:14 GMT-0300 (Hora oficial do Brasil)</div>
+</div>
+<script src="../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../sorter.js"></script>
+</body>
+</html>

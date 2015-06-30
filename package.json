@@ -1,0 +1,32 @@
+{
+    "name": "node-app",
+    "version": "1.0.0",
+    "description": "Aplicação para o PI do 7° Período de SI",
+    "main": "server.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/waltim/calcPI.git"
+    },
+    "scripts": {
+        "start": "node server.js",
+        "test": "istanbul cover --hook-run-in-context node_modules/mocha/bin/_mocha -- -R spec"
+    },
+    "engines": {
+        "node": "0.12.5"
+    },
+    "homepage": "https://github.com/waltim/calcPI",
+    "dependencies": {
+        "accounting": "^0.4.1",
+        "body-parser": "^1.12.4",
+        "ejs": "^2.3.1",
+        "express": "^4.12.4",
+        "express-load": "^1.1.14",
+        "istanbul": "^0.3.17"
+    },
+    "devDependencies": {
+        "mocha": "^2.2.5",
+        "should": "^6.0.3"
+    },
+    "author": "@Walter",
+    "license": "MIT"
+}
