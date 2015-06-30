@@ -1,81 +1,12 @@
 <form action="/calcular" method="post">
 	<input type="hidden" name="operacao" value="<%- operacao %>" />
-    			<label for="numero1">Alguel/Prestação:
-                <input name="numero1" required="required" placeholder="R$ '99.999,9' "/></label> <br />
-
-                <label for="numero2">Empréstimo Sobre Valor da Casa:
-                <input name="numero2" required="required" placeholder="R$ '99.999,9' " /></label> <br />
-
-                <label for="numero3">Água,Esgoto,Lixo:
-                <input name="numero3" required="required" placeholder="R$ '99.999,9'"/></label> <br />
-
-                <label for="numero4">Telefone , Celular:
-                <input name="numero4" required="required" placeholder="R$ '99.999,9' " /></label> <br />
-
-                <label for="numero5">Condomínio:
-                <input name="numero5" required="required" placeholder="R$ '99.999,9' "/></label> <br />
-
-                <label for="numero6">IPTU:
-                <input name="numero6" required="required" placeholder="R$ '99.999,9' "/></label> <br />
-
-                <label for="numero7">Seguro:
-                <input name="numero7" required="required" placeholder="R$ '99.999,9' " /></label> <br />
-
-                <label for="numero8">Convenio:
-                <input name="numero8" required="required" placeholder="R$ '99.999,9' "/></label> <br />
-
-                <label for="numero9">Televisão por Assinatura:
-                <input name="numero9" required="required" placeholder="R$ '99.999,9' " /></label> <br />
-
-                <label for="numero10">Casa(Mercado, Móveis , Eletrodomésticos, etc.):
-                <input name="numero10"required="required"  placeholder="R$ '99.999,9' "/></label> <br />
-
-                <label for="numero11">Manutenção / Reparo de casa:
-                <input name="numero11" required="required" placeholder="R$ '99.999,9' "/></label> <br />
-
-                <label for="numero12">Internet:
-                <input name="numero12" required="required" placeholder="R$ '99.999,9' " /></label> <br />
-
-                <label for="numero13">Limpeza da casa:
-                <input name="numero13"required="required" placeholder="R$ '99.999,9' "/></label> <br />
-
-                <label for="numero14">Passagem de ônibus/trem:
-                <input name="numero14" required="required" placeholder="R$ '99.999,9' " /></label> <br />
-
-                <label for="numero15">Táxi:
-                <input name="numero15" required="required" placeholder="R$ '99.999,9' "/></label> <br />
-
-                <label for="numero16">Prestação do carro:
-                <input name="numero16" required="required" placeholder="R$ '99.999,9' "/></label> <br />
-
-                <label for="numero17">Combustível:
-                <input name="numero17"required="required" placeholder="R$ '99.999,9' " /></label> <br />
-
-                <label for="numero18">Manutenção do carro:
-                <input name="numero18"required="required" placeholder="R$ '99.999,9' "/></label> <br />
-
-                <label for="numero19">IPVA:
-                <input name="numero19" required="required" placeholder="R$ '99.999,9' " /></label> <br />
-
-                <label for="numero20">Reparo para o carro:
-                <input name="numero20" required="required" placeholder="R$ '99.999,9' "/></label> <br />
-
-                <label for="numero21">Manutenção do carro:
-                <input name="numero21"required="required" placeholder="R$ '99.999,9' "/></label> <br />
-
-                <label for="numero22">Seguro do carro:
-                <input name="numero22" required="required" placeholder="R$ '99.999,9' " /></label> <br />
-
-                <label for="numero23">Licenciamento:
-                <input name="numero23" required="required" placeholder="R$ '99.999,9' "/></label> <br />
-
-                <label for="numero24">Outros:
-                <input name="numero24" required="required" placeholder="R$ '99.999,9' "/></label><br/>
-	            <input type="submit" value="Calcular" />
+	<label>Gastos mensais</label>
+	<input type="text" name="numero1" />
+	<label>Outros gastos</label>
+	<input type="text" name="numero2" />
+	<input type="submit" value="Calcular" />
 </form>
 
 <% if(typeof(resultado) != 'undefined') { %>
-	<p>Seu gasto total foi de : R$ <%= resultado %>.</p>
+	<p>O resultado é <%= resultado %>.</p>
 <% } %>
-
-<center><a href="/">Voltar</a></center>

@@ -4,7 +4,7 @@ module.exports = function(app) {
 	app.get('/', controller.get.index);
 	app.get('/somar', controller.get.somar);
 	app.get('/subtrair', controller.get.subtrair);
-	app.get('/multiplicar', controller.get.multiplicar);
+	//app.get('/multiplicar', controller.get.multiplicar);
 	app.get('/dividir', controller.get.dividir);
     app.get('/somarGastos', controller.get.somarGastos);
 	

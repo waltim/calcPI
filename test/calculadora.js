@@ -116,7 +116,7 @@ describe('Calculadora', function() {
 				var resultado = controller.utils.calculos.dividir(numero1, numero2);
 				
 				resultado.should.be.a.Number;
-				resultado.should.be.equal(0.25);
+				resultado.should.be.equal(400);
 			});
 			
 			it('Deveria retornar -0.25 quando for passado -1 e 4.', function() {
@@ -126,7 +126,7 @@ describe('Calculadora', function() {
 				var resultado = controller.utils.calculos.dividir(numero1, numero2);
 				
 				resultado.should.be.a.Number;
-				resultado.should.be.equal(-0.25);
+				resultado.should.be.equal(-400);
 			});
 			
 			it('Deveria retornar -0.25 quando for passado 1 e -4.', function() {
@@ -136,7 +136,7 @@ describe('Calculadora', function() {
 				var resultado = controller.utils.calculos.dividir(numero1, numero2);
 				
 				resultado.should.be.a.Number;
-				resultado.should.be.equal(-0.25);
+				resultado.should.be.equal(-400);
 			});
 			
 			it('Deveria retornar 0.25 quando for passado -1 e -4.', function() {
@@ -146,7 +146,7 @@ describe('Calculadora', function() {
 				var resultado = controller.utils.calculos.dividir(numero1, numero2);
 				
 				resultado.should.be.a.Number;
-				resultado.should.be.equal(0.25);
+				resultado.should.be.equal(400);
 			});
 		});
 	});
@@ -197,7 +197,7 @@ describe('Calculadora', function() {
 				var resultado = controller.utils.calculos.calcular(parametros);
 				
 				resultado.should.be.a.Number;
-				resultado.should.be.equal(0.25);
+				resultado.should.be.equal(400);
 			});
 		});
 	});
@@ -257,6 +257,82 @@ describe('Calculadora', function() {
 
             resultado.should.be.a.Number;
             resultado.should.be.equal(gastoTotal);
+        });
+    });
+    describe('SalarioRestante', function() {
+        it("Subtrair os gastos no salario da pessoa", function() {
+            var numero1 = 1;
+            var numero2 = 4;
+            var numero3 = 1;
+            var numero4 = 4;
+            var numero5 = 1;
+            var numero6 = 4;
+            var numero7 = 1;
+            var numero8 = 4;
+            var numero9 = 1;
+            var numero10 = 4;
+            var numero11 = 1;
+            var numero12 = 4;
+            var numero13 = 1;
+            var numero14 = 4;
+            var numero15 = 1;
+            var numero16 = 4;
+            var numero17 = 1;
+            var numero18 = 4;
+            var numero19 = 1;
+            var numero20 = 4;
+            var numero21 = 1;
+            var numero22 = 4;
+            var numero23 = 1;
+            var numero24 = 4;
+            var gastoTotal = 60;
+            var salario = 100;
+            var novoSalario = salario - gastoTotal;
+
+            var resultado = controller.utils.calculos.salarioRestante(salario,numero1,numero2,numero3,numero4,numero5,numero6,numero7,numero8,
+                numero9,numero10,numero11,numero12,numero13,numero14,numero15,numero16,
+                numero17,numero18,numero19,numero20,numero21,numero22,numero23,numero24);
+
+            resultado.should.be.a.Number;
+            resultado.should.be.equal(novoSalario);
+        });
+    });
+    describe('PorcentagemDeGastos', function() {
+        it("Quantidade de gastos em porcentagem por uma pessoa", function() {
+            var numero1 = 1;
+            var numero2 = 4;
+            var numero3 = 1;
+            var numero4 = 4;
+            var numero5 = 1;
+            var numero6 = 4;
+            var numero7 = 1;
+            var numero8 = 4;
+            var numero9 = 1;
+            var numero10 = 4;
+            var numero11 = 1;
+            var numero12 = 4;
+            var numero13 = 1;
+            var numero14 = 4;
+            var numero15 = 1;
+            var numero16 = 4;
+            var numero17 = 1;
+            var numero18 = 4;
+            var numero19 = 1;
+            var numero20 = 4;
+            var numero21 = 1;
+            var numero22 = 4;
+            var numero23 = 1;
+            var numero24 = 4;
+            var gastoTotal = 60;
+            var salario = 100;
+            var porcentagem =  (gastoTotal*100)/salario;
+
+            var resultado = controller.utils.calculos.porcentagemDeGastos(salario,numero1,numero2,numero3,numero4,numero5,numero6,numero7,numero8,
+                numero9,numero10,numero11,numero12,numero13,numero14,numero15,numero16,
+                numero17,numero18,numero19,numero20,numero21,numero22,numero23,numero24);
+
+            resultado.should.be.a.Number;
+            resultado.should.be.equal(porcentagem);
         });
     });
 });
