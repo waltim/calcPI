@@ -1,7 +1,7 @@
 {
     "name": "node-app",
     "version": "1.0.0",
-    "description": "Aplicação para o PI do 7° Período de SI",
+    "description": "Sistema de controle financeiro",
     "main": "server.js",
     "repository": {
         "type": "git",
@@ -9,7 +9,8 @@
     },
     "scripts": {
         "start": "node server.js",
-        "test": "istanbul cover --hook-run-in-context node_modules/mocha/bin/_mocha -- -R spec"
+        "test": "node_modules/mocha/bin/_mocha -- -R spec",
+        "coverage":"istanbul cover --hook-run-in-context"
     },
     "engines": {
         "node": "0.12.5"

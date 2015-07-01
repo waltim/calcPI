@@ -260,6 +260,78 @@ describe('Calculadora', function() {
             resultado.should.be.equal(gastoTotal);
         });
     });
+    describe('SomarGastos2', function() {
+        it("Soma os gastos feito por uma pessoa", function() {
+            var numero1 = 1;
+            var numero2 = 4;
+            var numero3 = 1;
+            var numero4 = 4;
+            var numero5 = 1;
+            var numero6 = 4;
+            var numero7 = 1;
+            var numero8 = 4;
+            var numero9 = 1;
+            var numero10 = 4;
+            var numero11 = 1;
+            var numero12 = 4;
+            var numero13 = 1;
+            var numero14 = 4;
+            var numero15 = 1;
+            var numero16 = 4;
+            var numero17 = 1;
+            var numero18 = 4;
+            var numero19 = 1;
+            var numero20 = 4;
+            var numero21 = 1;
+            var numero22 = 4;
+            var numero23 = 1;
+            var numero24 = 4;
+            var gastoTotal = 60;
+
+            var resultado = controller.utils.calculos.somarGastos2(numero1,numero2,numero3,numero4,numero5,numero6,numero7,numero8,
+                numero9,numero10,numero11,numero12,numero13,numero14,numero15,numero16,
+                numero17,numero18,numero19,numero20,numero21,numero22,numero23,numero24);
+
+            resultado.should.be.a.Number;
+            resultado.should.be.equal(gastoTotal);
+        });
+    });
+    describe('SomarGastos3', function() {
+        it("Soma os gastos feito por uma pessoa", function() {
+            var numero1 = 1;
+            var numero2 = 4;
+            var numero3 = 1;
+            var numero4 = 4;
+            var numero5 = 1;
+            var numero6 = 4;
+            var numero7 = 1;
+            var numero8 = 4;
+            var numero9 = 1;
+            var numero10 = 4;
+            var numero11 = 1;
+            var numero12 = 4;
+            var numero13 = 1;
+            var numero14 = 4;
+            var numero15 = 1;
+            var numero16 = 4;
+            var numero17 = 1;
+            var numero18 = 4;
+            var numero19 = 1;
+            var numero20 = 4;
+            var numero21 = 1;
+            var numero22 = 4;
+            var numero23 = 1;
+            var numero24 = 4;
+            var gastoTotal = 60;
+
+            var resultado = controller.utils.calculos.somarGastos3(numero1,numero2,numero3,numero4,numero5,numero6,numero7,numero8,
+                numero9,numero10,numero11,numero12,numero13,numero14,numero15,numero16,
+                numero17,numero18,numero19,numero20,numero21,numero22,numero23,numero24);
+
+            resultado.should.be.a.Number;
+            resultado.should.be.equal(gastoTotal);
+        });
+    });
     describe('SalarioRestante', function() {
         it("Subtrair os gastos no salario da pessoa", function() {
             var numero1 = 1;
@@ -291,6 +363,82 @@ describe('Calculadora', function() {
             var novoSalario = salario - gastoTotal;
 
             var resultado = controller.utils.calculos.salarioRestante(salario,numero1,numero2,numero3,numero4,numero5,numero6,numero7,numero8,
+                numero9,numero10,numero11,numero12,numero13,numero14,numero15,numero16,
+                numero17,numero18,numero19,numero20,numero21,numero22,numero23,numero24);
+
+            resultado.should.be.a.Number;
+            resultado.should.be.equal(novoSalario);
+        });
+    });
+    describe('SalarioRestante2', function() {
+        it("Subtrair os gastos no salario da pessoa", function() {
+            var numero1 = 1;
+            var numero2 = 4;
+            var numero3 = 1;
+            var numero4 = 4;
+            var numero5 = 1;
+            var numero6 = 4;
+            var numero7 = 1;
+            var numero8 = 4;
+            var numero9 = 1;
+            var numero10 = 4;
+            var numero11 = 1;
+            var numero12 = 4;
+            var numero13 = 1;
+            var numero14 = 4;
+            var numero15 = 1;
+            var numero16 = 4;
+            var numero17 = 1;
+            var numero18 = 4;
+            var numero19 = 1;
+            var numero20 = 4;
+            var numero21 = 1;
+            var numero22 = 4;
+            var numero23 = 1;
+            var numero24 = 4;
+            var gastoTotal = 60;
+            var salario = 100;
+            var novoSalario = salario - gastoTotal;
+
+            var resultado = controller.utils.calculos.salarioRestante2(salario,numero1,numero2,numero3,numero4,numero5,numero6,numero7,numero8,
+                numero9,numero10,numero11,numero12,numero13,numero14,numero15,numero16,
+                numero17,numero18,numero19,numero20,numero21,numero22,numero23,numero24);
+
+            resultado.should.be.a.Number;
+            resultado.should.be.equal(novoSalario);
+        });
+    });
+    describe('SalarioRestante3', function() {
+        it("Subtrair os gastos no salario da pessoa", function() {
+            var numero1 = 1;
+            var numero2 = 4;
+            var numero3 = 1;
+            var numero4 = 4;
+            var numero5 = 1;
+            var numero6 = 4;
+            var numero7 = 1;
+            var numero8 = 4;
+            var numero9 = 1;
+            var numero10 = 4;
+            var numero11 = 1;
+            var numero12 = 4;
+            var numero13 = 1;
+            var numero14 = 4;
+            var numero15 = 1;
+            var numero16 = 4;
+            var numero17 = 1;
+            var numero18 = 4;
+            var numero19 = 1;
+            var numero20 = 4;
+            var numero21 = 1;
+            var numero22 = 4;
+            var numero23 = 1;
+            var numero24 = 4;
+            var gastoTotal = 60;
+            var salario = 100;
+            var novoSalario = salario - gastoTotal;
+
+            var resultado = controller.utils.calculos.salarioRestante3(salario,numero1,numero2,numero3,numero4,numero5,numero6,numero7,numero8,
                 numero9,numero10,numero11,numero12,numero13,numero14,numero15,numero16,
                 numero17,numero18,numero19,numero20,numero21,numero22,numero23,numero24);
 
