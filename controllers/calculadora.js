@@ -34,6 +34,13 @@ module.exports = function() {
 				dividir: function(numero1, numero2) {
 					return (numero2*100) / numero1;
 				},
+                somarNumerosCom20: function(numero1, numero2){
+                    resultado = Number(0);
+                    resultado += numero1;
+                    resultado += numero2;
+                    resultado += 20;
+                    return resultado;
+                },
                 somarGastos: function(numero1,numero2,numero3,numero4,numero5,numero6,numero7,numero8,
                                       numero9,numero10,numero11,numero12,numero13,numero14,numero15,numero16,
                                       numero17,numero18,numero19,numero20,numero21,numero22,numero23,numero24)

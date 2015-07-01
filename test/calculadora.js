@@ -495,4 +495,15 @@ describe('Calculadora', function() {
             resultado.should.be.equal(105);
         });
     });
+    describe('SomarNumerosCom20', function() {
+        it('Deveria retornar 40 quando for passado 10 e 10.', function() {
+            var numero1 = 10;
+            var numero2 = 10;
+
+            var resultado = controller.utils.calculos.somarNumerosCom20(numero1, numero2);
+
+            resultado.should.be.a.Number;
+            resultado.should.be.equal(40);
+        });
+    });
 });
