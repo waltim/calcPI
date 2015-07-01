@@ -9,7 +9,7 @@
     },
     "scripts": {
         "start": "node server.js",
-        "test": "mocha -- -R spec",
+        "test": "mocha --harmony-generators",
         "coverage":"istanbul cover --hook-run-in-context"
     },
     "engines": {
